@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+Thai+Looped&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+Thai+Looped&family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: rgb(211, 209, 209);
+    /* width: 375px; FOR MAKING RESPONSIVE WEBSITE ! */
+    height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 25px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 20px 0px;
+    margin-left: 40px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+    height: 100vh;
+}
+
+.infoContainer {
+    /* background-color: aqua; */
+    height: 58vh;
+    width: 75vw;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-around;
+    /* margin-left: 225px; */
+
+}
+
+.devinfo {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 50px 10px 85px 0;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+.hello {
+    font-size: 2em;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.about {
+    font-size: 2em;
+}
+
+.moreabout {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.buttons {
+    margin-top: 30px;
+    font-size: 7px;
+}
+
+.btn {
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    background-color: teal;
+    font-weight: bold;
+    font-size: 2em;
+    /* TO TARGET THE TEXT : MAKE RESPONSIVE WEBSITE ALONG WITH ADJUSTED TEXT  */
+    margin: 4px 4px;
+    cursor: pointer;
+}
+
+.btn-sm {
+    font-size: 10px;
+    margin: 3px 0;
+    padding: 8px 6px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: teal;
+}
+
+.devpic img {
+    height: 58vh;
+}
+
+/* CONTACT.HTML FILE STYLING START HERE  */
+
+.contactform {
+    font-family: 'Bebas Neue', cursive;
+    /* padding-top: 150px; */
+    padding-left: 30px;
+    margin: 100px 210px;
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', sans-serif;
+    /* text-align: center; */
+    /* padding: 10px 0; */
+}
+
+.contactform form div {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form {
+    margin: 0 30px;
+}
+
+#emailHelp {
+    font-size: 11px;
+    color: brown;
+    margin: 0 10px;
+    PADDING: 4px 0px;
+}
+
+.contactform form div input {
+    /* width: 20vw; */
+    border-radius: 8px;
+    font-size: 15px;
+    margin: 2px 0px 0 0;
+    padding: 3px;
+}
+
+#form-check {
+    flex-direction: row;
+    /* width: 2px; */
+}
+
+#form-check input {
+    width: 18px;
+}
+
+#form-check-label {
+    padding: 0 7px;
+}
+
+/* BLOG.HTML FILE STYLING START HERE */
+
+.blogitems {
+    margin: 20px;
+    font-family: cursive;
+}
+
+.blogcontainer {
+    margin: 100px 200px;
+}
+
+.blogcontainer h1 {
+    font-family: 'Bebas Neue', cursive;
+    margin: 23px;
+}
+
+.blogitems p {
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+/* INTRO.HTML FILE STYLING START HERE  */
+
+.devskill {
+    margin: -60px;
+
+    /* USE EM TAG FOR FIXING THE SIZE OF THE FONT OF DEVINFO CONTAINER  */
+}
+
+.devinfo h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.devinfo h2 {
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 15px;
+}
+
+.skillcontainer {
+    padding: 15px;
+}
+
+.skillset {
+    display: flex;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.skill {
+    width: 250px;
+    height: 4px;
+    background-color: red;
+    border: 2px solid black;
+
+}
+
+.s100 {
+    width: 250px;
+    background-color: blue;
+    margin-left: 47px;
+}
+
+.s50 {
+    width: 125px;
+    margin-left: 10px;
+    background-color: red;
+}
+
+.s75 {
+    background-color: violet;
+    width: 200px;
+    margin-left: 38px;
+}
+
+.s25 {
+    background-color: green;
+    width: 50px;
+    margin-left: 21px;
+}
+
+.projectdetails ul {
+    margin: 10px 42px;
+}
+
+/* MAKING WEBSITE RESPONSIVE  */
+
+.sidebargo {
+    transform: translateX(-375px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.close {
+    margin-left: 148px;
+}
+
+@media (max-width: 1500px) {
+
+    .devpic img {
+        display: none;
+    }
+
+    .devinfo {
+        font-size: 13px;
+        margin: 50px 0 0 80px;
+    }
+
+    .buttons {
+        font-size: 8px;
+    }
+
+    .infoContainer, .blogcontainer, .contactform {
+        margin: 50px 8px;
+    }
+
+    .infoContainer {
+        margin: -27px 8px;
+    }
+
+}
